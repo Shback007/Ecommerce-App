@@ -22,7 +22,7 @@
     text-decoration: line-through;
 }
 
-.item:hover{
+.item img:hover{
     transform: scale(1.05);
     transition:0.6s;
 }
