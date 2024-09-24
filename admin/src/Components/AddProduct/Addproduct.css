@@ -40,7 +40,7 @@
 .addproduct-thumbnail-img{
     height: 120px;
     width: 120px;
-    border-radius: 10px;
+    border-radius: 14px;
     object-fit: contain;
     margin: 10px 0px;
     cursor: pointer;
@@ -56,6 +56,14 @@
     color: white;
     font-size: 16px;
     font-weight: 500;
+}
+.uploaded-image-style {
+    height: 120px;
+    width: 120px;
+    border-radius: 14px;
+    margin: 10px 0px;
+    cursor: pointer;
+    object-fit: fill;
 }
 @media(max-width:800px){
     .add-product{

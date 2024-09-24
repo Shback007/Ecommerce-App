@@ -106,7 +106,7 @@ app.post('/addproduct',async (req,res)=>{
 })
 
 //Creating API for deleting products
-
+const fs = require('fs');
 app.post('/removeproduct', async (req, res) => {
     try {
         const product = await Product.findOneAndDelete({ id: req.body.id });
@@ -118,7 +118,20 @@ app.post('/removeproduct', async (req, res) => {
             });
         }
 
-        console.log("Removed:", product);
+        //Extract the image path from the product (full URL)
+        const relativeImagePath = product.image.split(`http://localhost:${4000}/`)[1];
+        const imagePath = path.join(__dirname,'upload',relativeImagePath);
+
+        fs.unlink(imagePath, (err) =>{
+            if(err){
+                console.error("Error deleting image file:", err);
+                return res.status(500).json({
+                    success:false,
+                    message:'Failed to delete image file',
+                });
+            }
+        })
+
         res.json({
             success: true,
             message: `Product with id ${req.body.id} was removed`,
@@ -138,6 +151,95 @@ app.get('/allproducts', async (req,res)=>{
     console.log("All Products Fetched");
     res.send(products);
 })
+
+
+// Schema Creating for user model
+
+const Users = mongoose.model('Users',{
+    name:{
+        type:String,
+        required:true,
+    },
+    email:{
+        type:String,
+        unique:true,
+        required:true,
+    },
+    password:{
+        type:String,
+        required:true,
+    },
+    cartData:{
+        type:Object,
+    },
+    date:{
+        type:Date,
+        default:Date.now,
+    }
+},"Users")
+
+//creating Endpoint for registering the user
+
+const bcrypt = require('bcrypt');
+
+app.post('/signup',async (req,res)=>{
+
+    let check = await Users.findOne({email:req.body.email});
+    if(check){
+        return res.status(400).json({success:false,errors:"existing user found with same email address"})
+    }
+    let cart ={};
+    for (let i = 0; i < 300; i++) {
+        cart[i]=0;
+    }
+
+    const hashedPassword = await bcrypt.hash(req.body.password , 10);
+    const user = new Users({
+        name:req.body.username,
+        email:req.body.email,
+        password:hashedPassword,
+        cartData:cart,
+    })
+
+    await user.save();
+
+    const data = {
+        user:{
+            id:user.id
+        }
+    }
+
+    const token = jwt.sign(data,'secret_ecom');
+    res.json({success:true,token})
+})
+
+//Creating endpoint for user login
+
+app.post('/login',async (req,res)=>{
+    try{
+        let user = await Users.findOne({email:req.body.email});
+        if(user){
+            const passCompare =  await bcrypt.compare(req.body.password,user.password)
+            if(passCompare){
+                const data = {
+                    user:{
+                        id:user.id
+                    }
+                }
+                const token = jwt.sign(data,'secret_ecom');
+                res.json({ success: true, token });
+            }else{
+                res.status(401).json({success:false,errors:"Wrong Password"});
+            }
+        }else{
+            res.status(404).json({success:false,errors:"Wrong Email id"});
+        }
+    }catch (error) {
+        console.error("Login Error:", error);
+        return res.status(500).json({ success: false, errors: "Internal Server Error" });
+    }
+})
+
 
 app.listen(port,(error)=>{
     if(!error){

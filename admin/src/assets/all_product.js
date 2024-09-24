@@ -42,7 +42,7 @@ let all_product = [
     category: "women",
     image: p1_img,
     new_price: 50.0,
-    old_price: 80.5,
+    old_price: 80.0,
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ let all_product = [
     category: "women",
     image: p2_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 3,
@@ -58,7 +58,7 @@ let all_product = [
     category: "women",
     image: p3_img,
     new_price: 60.0,
-    old_price: 100.5,
+    old_price: 100.0,
   },
   {
     id: 4,
@@ -74,7 +74,7 @@ let all_product = [
     category: "women",
     image: p5_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 6,
@@ -82,7 +82,7 @@ let all_product = [
     category: "women",
     image: p6_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 7,
@@ -90,7 +90,7 @@ let all_product = [
     category: "women",
     image: p7_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ let all_product = [
     category: "women",
     image: p8_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 9,
@@ -106,7 +106,7 @@ let all_product = [
     category: "women",
     image: p9_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 10,
@@ -114,7 +114,7 @@ let all_product = [
     category: "women",
     image: p10_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 11,
@@ -122,7 +122,7 @@ let all_product = [
     category: "women",
     image: p11_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 12,
@@ -130,7 +130,7 @@ let all_product = [
     category: "women",
     image: p12_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 13,
@@ -138,7 +138,7 @@ let all_product = [
     category: "men",
     image: p13_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 14,
@@ -146,7 +146,7 @@ let all_product = [
     category: "men",
     image: p14_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 15,
@@ -154,7 +154,7 @@ let all_product = [
     category: "men",
     image: p15_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 16,
@@ -162,7 +162,7 @@ let all_product = [
     category: "men",
     image: p16_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 17,
@@ -170,7 +170,7 @@ let all_product = [
     category: "men",
     image: p17_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 18,
@@ -178,7 +178,7 @@ let all_product = [
     category: "men",
     image: p18_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 19,
@@ -186,7 +186,7 @@ let all_product = [
     category: "men",
     image: p19_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 20,
@@ -194,7 +194,7 @@ let all_product = [
     category: "men",
     image: p20_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 21,
@@ -202,7 +202,7 @@ let all_product = [
     category: "men",
     image: p21_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 22,
@@ -210,7 +210,7 @@ let all_product = [
     category: "men",
     image: p22_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 23,
@@ -218,7 +218,7 @@ let all_product = [
     category: "men",
     image: p23_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 24,
@@ -226,7 +226,7 @@ let all_product = [
     category: "men",
     image: p24_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 25,
@@ -234,7 +234,7 @@ let all_product = [
     category: "kid",
     image: p25_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 26,
@@ -242,7 +242,7 @@ let all_product = [
     category: "kid",
     image: p26_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 27,
@@ -250,7 +250,7 @@ let all_product = [
     category: "kid",
     image: p27_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 28,
@@ -258,7 +258,7 @@ let all_product = [
     category: "kid",
     image: p28_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 29,
@@ -266,7 +266,7 @@ let all_product = [
     category: "kid",
     image: p29_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 30,
@@ -274,7 +274,7 @@ let all_product = [
     category: "kid",
     image: p30_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 31,
@@ -282,7 +282,7 @@ let all_product = [
     category: "kid",
     image: p31_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 32,
@@ -290,7 +290,7 @@ let all_product = [
     category: "kid",
     image: p32_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 33,
@@ -298,7 +298,7 @@ let all_product = [
     category: "kid",
     image: p33_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 34,
@@ -306,7 +306,7 @@ let all_product = [
     category: "kid",
     image: p34_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 35,
@@ -314,7 +314,7 @@ let all_product = [
     category: "kid",
     image: p35_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
   {
     id: 36,
@@ -322,7 +322,7 @@ let all_product = [
     category: "kid",
     image: p36_img,
     new_price: 85.0,
-    old_price: 120.5,
+    old_price: 120.0,
   },
 ];
 
