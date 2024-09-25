@@ -29,14 +29,14 @@ const ProductDisplay = (props) => {
                 <img src={star_icon} alt="" />
                 <img src={star_icon} alt="" />
                 <img src={star_dull_icon} alt="" />
-                <p>({product.rated})</p>
+                <p>({189})</p>
             </div>
             <div className="productdisplay-right-prices">
                 <div className="productdisplay-right-price-old">${product.old_price}</div>
                 <div className="productdisplay-right-price-new">${product.new_price}</div>
             </div>
             <div className="productdisplay-right-description">
-                {product.description}
+                Upgrade your lifestyle with our Product, a perfect blend of innovation and convenience. Designed for modern living, this product offers exceptional performance and style, ensuring that you get the best of both worlds.
             </div>
             <div className="productdisplay-right-size">
                 <h1>Select Size</h1>
@@ -49,7 +49,7 @@ const ProductDisplay = (props) => {
                 </div>
             </div>
             <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-            <p className='productdisplay-right-category'><span>Category: </span>{product.category}, {product.type}, {product.type2}</p>
+            <p className='productdisplay-right-category'><span>Category: </span>{product.category}, SweatShirt, Jeans</p>
             <p className='productdisplay-right-category'><span>Tags: </span>Modern , Latest</p>
         </div>
     </div>
