@@ -52,6 +52,7 @@
 @media(max-width:800px){
     .new-collections{
         gap: 6px;
+        margin-top: 70px;
     }
     .new-collections h1{
         font-size: 20px;
