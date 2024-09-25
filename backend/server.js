@@ -119,7 +119,7 @@ app.post('/removeproduct', async (req, res) => {
         }
 
         //Extract the image path from the product (full URL)
-        const relativeImagePath = product.image.split(`http://localhost:${4000}/`)[1];
+        const relativeImagePath = product.image.split(`http://localhost:${port}/`)[1];
         const imagePath = path.join(__dirname,'upload',relativeImagePath);
 
         fs.unlink(imagePath, (err) =>{

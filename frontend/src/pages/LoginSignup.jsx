@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/LoginSignup.css';
 
+const url = "http://localhost:4000"
 export const LoginSignup = () => {
 
   const [state, setState] = useState("Login");
@@ -25,7 +26,7 @@ export const LoginSignup = () => {
     }
 
     let responseData;
-    await fetch('http://localhost:4000/login', {
+    await fetch(`${url}/login`, {
       method: 'POST',
       headers: {
         Accept: 'application/form',
@@ -51,7 +52,7 @@ export const LoginSignup = () => {
     }
 
     let responseData;
-    await fetch('http://localhost:4000/signup', {
+    await fetch(`${url}/signup`, {
       method: 'POST',
       headers: {
         Accept: 'application/form',
