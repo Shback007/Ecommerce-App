@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './NewCollections.css'
 import Item from '../Item/Item'
-const url = 'http://localhost:4000'
+import { url } from '../Assets/assets';
 const NewCollections = () => {
 
   const [new_collection,setNew_Collection] = useState([]);

@@ -1,7 +1,8 @@
 import React, { createContext, useEffect, useState } from "react";
+import { url } from "../components/Assets/assets";
 
 export const ShopContext = createContext(null);
-const url ='http://localhost:4000'
+// const url ='http://localhost:4000'
 const getDefaultCart = ()=>{
     let cart = {};
     for (let index = 0; index < 300+1; index++) {

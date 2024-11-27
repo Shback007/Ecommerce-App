@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './CSS/LoginSignup.css';
+import { url } from '../components/Assets/assets';
 
-const url = "http://localhost:4000"
 export const LoginSignup = () => {
 
   const [state, setState] = useState("Login");
